@@ -1,0 +1,32 @@
+.upbutton{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  padding: 0;
+}
+.popCyEdi{
+}
+.popCyEdi>div{
+  width: 1000px;
+}
+/*.popCyEditbox{*/
+  /*height: 500px;*/
+  /*overflow-y: auto;*/
+/*}*/
+
+.popCyEdi .el-form-item__content {
+  line-height: 30px;
+  font-size: 12px;
+}
+.popCyEdi .name{  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;padding-left:80px}
+.popCyEdi .el-input-group__append, .el-input-group__prepend {
+
+  padding: 0 6px;
+
+}
+.popCyEdi .el-input__inner{
+  padding: 0px;
+  text-align: center;
+}

@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\views\ad\campaign\create\step3\group-create\group-create.bak.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">all files</a> / <a href="index.html">src/views/ad/campaign/create/step3/group-create/</a> group-create.bak.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div&gt;
+    &lt;el-form label-width="100px" size="small"&gt;
+      &lt;el-form-item label="人群包名称:" prop="group_name"&gt;
+        &lt;el-input v-model="group_name" style="width: 200px;"&gt;&lt;/el-input&gt;
+        &lt;el-checkbox v-model="is_save_group" style="margin-left: 15px;"&gt;保存为常用人群包&lt;/el-checkbox&gt;
+      &lt;/el-form-item&gt;
+      &lt;el-form-item label="定向类型:" prop="group_type"&gt;
+        &lt;el-radio v-model="group_type" :label="1"&gt;属性定向&lt;/el-radio&gt;
+        &lt;el-radio v-model="group_type" :label="2"&gt;ID 定向&lt;/el-radio&gt;
+      &lt;/el-form-item&gt;
+      &lt;el-form-item&gt;
+        &lt;template v-if="group_type == 1"&gt;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;年龄&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="年龄"&gt;
+                &lt;el-checkbox label="19岁以下"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="19-25岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="26-30岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="31-35岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="31-35岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="36-40岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="41-45岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="46-60岁"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="60岁以上"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="未知"&gt;&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+&nbsp;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;性别&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="性别"&gt;
+                &lt;el-checkbox label="男"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="女"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="未知"&gt;&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+&nbsp;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;学历&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="学历"&gt;
+                &lt;el-checkbox label="小学"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="初中"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="高中"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="大专"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="本科"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="研究生"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="博士及以上"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="未知"&gt;&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+&nbsp;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;收入水平&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="收入水平"&gt;
+                &lt;el-checkbox label="月收入2000以下"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="月收入2000-5000"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="月收入5000-10000"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="月收入10000-20000"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="月收入20000-50000"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="月收入50000以上"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="未知"&gt;&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+&nbsp;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;身份职业&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="身份职业"&gt;
+                &lt;el-checkbox label="学生"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="工程师"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="管理人员"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="职员"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="教师"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="医生"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="法律从业者"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="自由职业者"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="农民"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="公务员"&gt;&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="未知"&gt;&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+&nbsp;
+          &lt;div class="wrap"&gt;
+            &lt;label class="left"&gt;婚否&lt;/label&gt;
+            &lt;div class="right"&gt;
+              &lt;el-checkbox-group v-model="婚否"&gt;
+                &lt;el-checkbox label="是"&gt;已婚&lt;/el-checkbox&gt;
+                &lt;el-checkbox label="否"&gt;未婚&lt;/el-checkbox&gt;
+              &lt;/el-checkbox-group&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/template&gt;
+        &lt;template v-if="group_type ==2"&gt;
+          &lt;el-checkbox v-model="is_pc_type"&gt;PC定向&lt;/el-checkbox&gt;
+        &lt;/template&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-form&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import { mapState, mapActions } from 'vuex';
+  export default {
+    name: 'create-group',
+    data () {
+<span class="cstat-no" title="statement not covered" >      return {</span>
+      }
+    },
+    computed : {
+      ...mapState('ad/campaign',[
+        'group_name',
+        'is_save_group',
+        'group_type',
+        'is_pc_type',
+        'group_data',
+        'group_keys',
+      ])
+    }
+  }
+&lt;/script&gt;
+&lt;style scoped&gt;
+  .wrap {
+    display: flex;
+  }
+  .wrap .left {
+    width: 80px;
+    flex: none;
+  }
+  .wrap .right {
+    flex: auto;
+  }
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 16:35:32 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

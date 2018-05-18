@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\store\ad\campaign\mutations.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">src/store/ad/campaign/</a> mutations.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">2.22% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">2.22% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const mutations = {
+  UPDATE_STEP_INDEX ( state, step_index) {
+<span class="cstat-no" title="statement not covered" >    state.step_index = step_index</span>
+  },
+  UPDATE_CAMPAIGN_UPDATE_TYPE (state, campaign_update_type) {
+<span class="cstat-no" title="statement not covered" >    state.campaign_update_type = campaign_update_type</span>
+  },
+  UPDATE_CAMPAIGN_AUDIT_STATUS (state, campaign_audit_status) {
+<span class="cstat-no" title="statement not covered" >    state.campaign_audit_status = campaign_audit_status</span>
+  },
+  UPDATE_RUN_STATUS (state, run_status) {
+<span class="cstat-no" title="statement not covered" >    state.run_status = run_status</span>
+  },
+  UPDATE_BUDGET (state, budget) {
+<span class="cstat-no" title="statement not covered" >    state.budget = budget</span>
+  },
+  UPDATE_START_DATE (state, start_date) {
+<span class="cstat-no" title="statement not covered" >    state.start_date = start_date</span>
+  },
+  UPDATE_END_DATE (state, end_date) {
+<span class="cstat-no" title="statement not covered" >    state.end_date = end_date</span>
+  },
+  UPDATE_TIMESET_CHECK (state, timeset_check) {
+<span class="cstat-no" title="statement not covered" >    state.timeset_check = timeset_check</span>
+  },
+  UPDATE_LOCAL_CHECK (state, local_check) {
+<span class="cstat-no" title="statement not covered" >    state.local_check = local_check</span>
+  },
+  UPDATE_FREQUENCY_CHECK (state, frequency_check) {
+<span class="cstat-no" title="statement not covered" >    state.frequency_check = frequency_check</span>
+  },
+  UPDATE_SPEED_CHECK (state, speed_check) {
+<span class="cstat-no" title="statement not covered" >    state.speed_check = speed_check</span>
+  },
+  UPDATE_MEDIA_CHECK (state, media_check) {
+<span class="cstat-no" title="statement not covered" >    state.media_check = media_check</span>
+  },
+  UPDATE_ADVANCE_CHECK (state, advance_check) {
+<span class="cstat-no" title="statement not covered" >    state.advance_check = advance_check</span>
+  },
+  UPDATE_TIMESET( state, timeset ) {
+<span class="cstat-no" title="statement not covered" >    state.timeset = timeset;</span>
+  },
+  UPDATE_LOCAL ( state, local) {
+<span class="cstat-no" title="statement not covered" >    state.local = local;</span>
+  },
+  UPDATE_PLATFORM_ID ( state, platform_id) {
+<span class="cstat-no" title="statement not covered" >    state.platform_id = platform_id;</span>
+  },
+  UPDATE_SPEED ( state, speed) {
+<span class="cstat-no" title="statement not covered" >    state.speed = speed</span>
+  },
+  UPDATE_FREQUENCY_TYPE ( state, frequency_type) {
+<span class="cstat-no" title="statement not covered" >    state.frequency_type = frequency_type</span>
+  },
+  UPDATE_FREQUENCY ( state, frequency) {
+<span class="cstat-no" title="statement not covered" >    state.frequency = frequency</span>
+  },
+  UPDATE_FREQUENCY_DAY ( state, frequency_day) {
+<span class="cstat-no" title="statement not covered" >    state.frequency_day = frequency_day</span>
+  },
+  UPDATE_MEDIATYPE_ID (state, mediatype_id) {
+<span class="cstat-no" title="statement not covered" >    state.mediatype_id = mediatype_id</span>
+  },
+  UPDATE_CHANNEL_ID (state, channel_id) {
+<span class="cstat-no" title="statement not covered" >    state.channel_id = channel_id</span>
+  },
+  UPDATE_POSITION_ID (state, position_id) {
+<span class="cstat-no" title="statement not covered" >    state.position_id = position_id</span>
+  },
+  UPDATE_ADFORM_ID (state, adform_id) {
+<span class="cstat-no" title="statement not covered" >    state.adform_id = adform_id</span>
+  },
+  UPDATE_AD_POS_LIST (state, ad_pos_list) {
+<span class="cstat-no" title="statement not covered" >    state.ad_pos_list = ad_pos_list</span>
+  },
+  UPDATE_AD_POS (state, ad_pos) {
+<span class="cstat-no" title="statement not covered" >    state.ad_pos = ad_pos</span>
+  },
+  UPDATE_AD_POS_EXCEPT (state, ad_pos_except) {
+<span class="cstat-no" title="statement not covered" >    state.ad_pos_except = ad_pos_except</span>
+  },
+  UPDATE_WEBVIEW(state, webview){
+<span class="cstat-no" title="statement not covered" >    state.webview = webview</span>
+  },
+  UPDATE_DEVICE_TYPE (state, device_type) {
+<span class="cstat-no" title="statement not covered" >    state.device_type = device_type</span>
+  },
+  UPDATE_OS(state, os){
+<span class="cstat-no" title="statement not covered" >    state.os = os</span>
+  },
+  UPDATE_NET_CONFIG(state, value){
+<span class="cstat-no" title="statement not covered" >    state.net_config = value</span>
+  },
+  UPDATE_NETWORK(state, value){
+<span class="cstat-no" title="statement not covered" >    state.network = value</span>
+  },
+  // 人群包
+  UPDATE_GROUP_ID (state, group_id) {
+<span class="cstat-no" title="statement not covered" >    state.group_id = group_id</span>
+  },
+  UPDATE_GROUP_NAME (state, group_name) {
+<span class="cstat-no" title="statement not covered" >    state.group_name = group_name</span>
+  },
+  UPDATE_IS_SAVE_GROUP (state, is_save_group) {
+<span class="cstat-no" title="statement not covered" >    state.is_save_group = is_save_group</span>
+  },
+  UPDATE_GROUP_TYPE (state, group_type) {
+<span class="cstat-no" title="statement not covered" >    state.group_type = group_type</span>
+  },
+  UPDATE_GROUP_VALIDATY (state, group_validaty) {
+<span class="cstat-no" title="statement not covered" >    state.group_validaty = group_validaty</span>
+  },
+  UPDATE_GROUP_INFO (state, group_info) {
+<span class="cstat-no" title="statement not covered" >    state.group_info = group_info</span>
+  },
+  UPDATE_GROUP_KEYS (state, group_keys) {
+<span class="cstat-no" title="statement not covered" >    state.group_keys = group_keys</span>
+  },
+  UPDATE_GROUP_COOKIE (state, group_cookie) {
+<span class="cstat-no" title="statement not covered" >    state.group_cookie = group_cookie</span>
+  },
+  UPDATE_GROUP_ID_TYPE (state, group_id_type) {
+<span class="cstat-no" title="statement not covered" >    state.group_id_type = group_id_type</span>
+  },
+  UPDATE_GROUP_DEVICE (state, group_device) {
+<span class="cstat-no" title="statement not covered" >    state.group_device = group_device</span>
+  },
+  UPDATE_GROUP_ENCRYPT (state, group_encrypt) {
+<span class="cstat-no" title="statement not covered" >    state.group_encrypt = group_encrypt</span>
+  },
+  UPDATE_ZONE_INFO (state, zone_info) {
+<span class="cstat-no" title="statement not covered" >    state.zone_info = zone_info</span>
+  },
+}
+&nbsp;
+export default mutations
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 16:35:32 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

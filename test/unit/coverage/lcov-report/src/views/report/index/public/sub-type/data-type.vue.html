@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\views\report\index\public\sub-type\data-type.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">all files</a> / <a href="index.html">src/views/report/index/public/sub-type/</a> data-type.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/54</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/54</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;div&gt;
+        &lt;div&gt;
+            &lt;div class="hy-card__header clearfix"&gt;
+                &lt;label&gt;{{title}}&lt;/label&gt;
+                &lt;div class="pull-right" :inline="true"&gt;
+                    &lt;el-popover ref="filterOptions" 
+                        v-model="isFilterShow" 
+                        placement="bottom-end" 
+                        width="540" 
+                        trigger="click" 
+                        transition="el-zoom-in-top"
+                        @show="getFilterList"&gt;
+                        &lt;div&gt;
+                            &lt;el-transfer 
+                                :data="filterList" 
+                                v-model="filterValue" 
+                                :props="{
+                                    key: 'id',
+                                    label: 'name'
+                                }"
+                                :titles="['请选择', '已选']" 
+                                :button-texts="['到左边', '到右边']" 
+                                :format="{
+                                    noChecked: '${total}',
+                                    hasChecked: '${checked}/${total}'
+                                }"&gt;
+                            &lt;/el-transfer&gt;
+                            &lt;div style="float:right"&gt;
+                                &lt;el-button type="primary" size="mini" @click="save"&gt;保存&lt;/el-button&gt;
+                                &lt;el-button size="mini" @click="cancel"&gt;取消&lt;/el-button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/el-popover&gt;
+                    &lt;el-button v-popover:filterOptions size="mini"&gt;自定义条件
+                        &lt;i class="el-icon-arrow-down el-icon--right"&gt;&lt;/i&gt;
+                    &lt;/el-button&gt;
+                    &lt;el-date-picker size="mini" 
+                        v-model="dateValue" 
+                        type="daterange" 
+                        align="right" 
+                        unlink-panels 
+                        range-separator="至" 
+                        start-placeholder="开始日期" 
+                        end-placeholder="结束日期" 
+                        :picker-options="pickerOptions" 
+                        value-format="yyyyMMdd" @change="changeDate()"&gt;
+                    &lt;/el-date-picker&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="hy-card__content"&gt;
+                &lt;el-table border size="mini" :data="values.data" style="width: 100%"&gt;
+                    &lt;el-table-column header-align="center" align="left" prop="name" :label="headers[0]"&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="center" prop="budget" :label="headers[1]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['budget'],2,'¥')}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="cost" :label="headers[2]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['cost'],2,'¥')}}
+                            &lt;div v-if="parseFloat(scope.row['prev_cost'])&gt;0" style="color:red"&gt;
+                                &lt;i class="el-icon-caret-top"&gt;&lt;/i&gt;{{scope.row['prev_cost']}}%
+                            &lt;/div&gt;
+                            &lt;div v-else style="color:green"&gt;
+                                &lt;i class="el-icon-caret-bottom"&gt;&lt;/i&gt;{{scope.row['prev_cost']}}%
+                            &lt;/div&gt;
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="pv" :label="headers[3]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['pv'],0,'')}}
+                            &lt;div v-if="parseFloat(scope.row['prev_pv'])&gt;0" style="color:red"&gt;
+                                &lt;i class="el-icon-caret-top"&gt;&lt;/i&gt;{{scope.row['prev_pv']}}%
+                            &lt;/div&gt;
+                            &lt;div v-else style="color:green"&gt;
+                                &lt;i class="el-icon-caret-bottom"&gt;&lt;/i&gt;{{scope.row['prev_pv']}}%
+                            &lt;/div&gt;
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="click" :label="headers[4]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['click'],0,'')}}
+                            &lt;div v-if="parseFloat(scope.row['prev_click'])&gt;0" style="color:red"&gt;
+                                &lt;i class="el-icon-caret-top"&gt;&lt;/i&gt;{{scope.row['prev_click']}}%
+                            &lt;/div&gt;
+                            &lt;div v-else style="color:green"&gt;
+                                &lt;i class="el-icon-caret-bottom"&gt;&lt;/i&gt;{{scope.row['prev_click']}}%
+                            &lt;/div&gt;
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="cpm" :label="headers[5]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['cpm'],2,'¥')}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="ctr" :label="headers[6]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{scope.row['ctr']}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="cpc" :label="headers[7]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['cpc'],2,'¥')}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="leads" :label="headers[8]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{scope.row['leads']}}
+                            &lt;div v-if="isLeadsAdd" style="color:red"&gt;
+                                &lt;i class="el-icon-caret-top"&gt;&lt;/i&gt;{{leadsRate}}%
+                            &lt;/div&gt;
+                            &lt;div v-else style="color:green"&gt;
+                                &lt;i class="el-icon-caret-bottom"&gt;&lt;/i&gt;{{leadsRate}}%
+                            &lt;/div&gt;
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="cpl" :label="headers[9]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{$formatMoney(scope.row['cpl'],2,'¥')}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                    &lt;el-table-column header-align="center" align="right" prop="cr" :label="headers[10]"&gt;
+                        &lt;template slot-scope="scope"&gt;
+                            {{scope.row['cr']}}
+                        &lt;/template&gt;
+                    &lt;/el-table-column&gt;
+                &lt;/el-table&gt;
+                &lt;div class="pagination-wrap clearfix"&gt;
+                    &lt;el-pagination class="pull-right" 
+                        layout="total, prev, pager, next" 
+                        :total="getTotal" 
+                        :current-page="currentPage" 
+                        :page-size="pageSize" 
+                        @current-change="handle_page_change"&gt;
+                    &lt;/el-pagination&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="divide"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { mapState, mapMutations, mapActions } from "vuex";
+import _ from "lodash";
+&nbsp;
+export default {
+  name: "data-type", //广告主数据，品牌数据，，，，
+  props: {
+    title: {
+      //标题
+      type: String,
+      required: true
+    },
+    headers: {
+      //表格的标题
+      type: Array,
+      required: true
+    },
+    values: {
+      //表格数据
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      filterList: [], //自定义条件的值
+      filterValue: [], //已选则
+      isFilterShow: false,
+&nbsp;
+      dateValue: [],
+      pickerOptions: {
+        shortcuts: [
+          {
+            text: '昨天',
+            onClick(picker) {
+               const end = <span class="cstat-no" title="statement not covered" >new Date();</span>
+               const start = <span class="cstat-no" title="statement not covered" >new Date();</span>
+<span class="cstat-no" title="statement not covered" >               start.setTime(start.getTime() - 3600 * 1000 * 24 * 1);</span>
+<span class="cstat-no" title="statement not covered" >               end.setTime(end.getTime() - 3600 * 1000 * 24 * 1);</span>
+<span class="cstat-no" title="statement not covered" >               picker.$emit('pick', [start, end]);</span>
+            }
+          },
+          {
+            text: "近7天",
+            onClick(picker) {
+              const end = <span class="cstat-no" title="statement not covered" >new Date();</span>
+              const start = <span class="cstat-no" title="statement not covered" >new Date();</span>
+<span class="cstat-no" title="statement not covered" >              start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);</span>
+<span class="cstat-no" title="statement not covered" >              picker.$emit("pick", [start, end]);</span>
+            }
+          },
+          {
+            text: "近一个月",
+            onClick(picker) {
+              const end = <span class="cstat-no" title="statement not covered" >new Date();</span>
+              const start = <span class="cstat-no" title="statement not covered" >new Date();</span>
+<span class="cstat-no" title="statement not covered" >              start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);</span>
+<span class="cstat-no" title="statement not covered" >              picker.$emit("pick", [start, end]);</span>
+            }
+          }
+        ]
+      },
+      currentPage: 1,
+      pageSize: 5,
+      //hardcode
+      isCostAdd: true,
+      costRate: "2.56",
+      isWinAdd: false,
+      winRate: "1.95",
+      isClickAdd: false,
+      clickRate: "9.56",
+      isLeadsAdd: false,
+      leadsRate: "5.26"
+    };
+  },
+&nbsp;
+  computed: {
+    ...mapState({
+      advertiser_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.advertiser_report,</span></span>
+      brand_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.brand_report,</span></span>
+      productline_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.productline_report,</span></span>
+      project_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.project_report,</span></span>
+      activity_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.activity_report,</span></span>
+      campaign_report: state =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state.report.campaign_report,</span></span>
+    }),
+&nbsp;
+    getTotal() {
+<span class="cstat-no" title="statement not covered" >      return +this.values.total;</span>
+    }
+  },
+&nbsp;
+  methods: {
+    save() {
+<span class="cstat-no" title="statement not covered" >      this.isFilterShow = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.$emit("update", {</span>
+        filterValue: this.filterValue
+      });
+    },
+&nbsp;
+    changeDate(){
+<span class="cstat-no" title="statement not covered" >        this.$emit("update", {</span>
+          dateValue: this.dateValue
+        });
+    },
+&nbsp;
+    cancel() {
+<span class="cstat-no" title="statement not covered" >      this.isFilterShow = false;</span>
+    },
+&nbsp;
+    /**
+     * 从state获取 自定义列表
+     */
+    getFilterList() {
+      let route = <span class="cstat-no" title="statement not covered" >this.$route.path.substring(</span>
+        this.$route.path.lastIndexOf("/") + 1
+      );
+<span class="cstat-no" title="statement not covered" >      switch (route) {</span>
+        case "advertiser":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.advertiser_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.advertiser_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case "brand":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.brand_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.brand_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case "productline":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.productline_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.productline_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case "project":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.project_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.project_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case "activity":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.activity_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.activity_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case "campaign":
+<span class="cstat-no" title="statement not covered" >          this.filterList = _.cloneDeep(this.campaign_report.filterList);</span>
+<span class="cstat-no" title="statement not covered" >          this.filterValue = _.cloneDeep(this.campaign_report.filterValue);</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+      }
+    },
+&nbsp;
+    handle_page_change(currentpage) {
+<span class="cstat-no" title="statement not covered" >      this.currentPage = currentpage;</span>
+<span class="cstat-no" title="statement not covered" >      this.$emit("pageChange", {</span>
+        currentPage: this.currentPage,
+        limit: this.pageSize
+      });
+    }
+  },
+  created(){
+      const end = <span class="cstat-no" title="statement not covered" >new Date();</span>
+      const start = <span class="cstat-no" title="statement not covered" >new Date();</span>
+<span class="cstat-no" title="statement not covered" >      start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);</span>
+      
+      const defaultStart = <span class="cstat-no" title="statement not covered" >this.$formatDate(start,"yyyyMMdd");</span>
+      const defaultend = <span class="cstat-no" title="statement not covered" >this.$formatDate(end,"yyyyMMdd");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.dateValue = [defaultStart,defaultend];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.getFilterList();</span>
+  },
+&nbsp;
+};
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.hy-card__header {
+  border-bottom: 0;
+}
+&nbsp;
+.hy-card__content {
+  padding: 0;
+}
+&nbsp;
+.tb-name-column {
+  color: blue;
+}
+&nbsp;
+.divide {
+  padding: 5px;
+  background-color: #f0f2f5;
+}
+&lt;/style&gt;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 16:35:32 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

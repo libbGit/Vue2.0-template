@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\store\ad\campaign\actions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">src/store/ad/campaign/</a> actions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0.68% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/147</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/139</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0.68% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/147</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import fetch from '@/services/fetch'
+&nbsp;
+const actions = {
+  update_campaign_update_type ({commit}, campaign_update_type) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_CAMPAIGN_UPDATE_TYPE', campaign_update_type)</span>
+  },
+  update_campaign_audit_status({commit}, campaign_audit_status){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_CAMPAIGN_AUDIT_STATUS', campaign_audit_status)</span>
+  },
+  update_step_index ({commit}, step_index) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_STEP_INDEX', step_index)</span>
+  },
+  update_run_status ({commit}, run_status) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_RUN_STATUS', run_status)</span>
+  },
+  update_budget ({commit}, budget) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_BUDGET', budget)</span>
+  },
+  update_start_date ({commit}, start_date) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_START_DATE', start_date)</span>
+  },
+  update_end_date ({commit}, end_date) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_END_DATE', end_date)</span>
+  },
+  update_timeset_check ({commit}, timeset_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_TIMESET_CHECK', timeset_check)</span>
+  },
+  update_local_check ({commit}, local_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_LOCAL_CHECK', local_check)</span>
+  },
+  update_frequency_check ({commit}, frequency_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_FREQUENCY_CHECK', frequency_check)</span>
+  },
+  update_speed_check ({commit}, speed_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_SPEED_CHECK', speed_check)</span>
+  },
+  update_media_check ({commit}, media_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_MEDIA_CHECK', media_check)</span>
+  },
+  update_advance_check ({commit}, advance_check) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_ADVANCE_CHECK', advance_check)</span>
+  },
+  update_timeset ({commit}, timeset) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_TIMESET', timeset);</span>
+  },
+  update_local ( {commit}, local) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_LOCAL', local);</span>
+  },
+  update_speed ({commit}, speed){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_SPEED', speed)</span>
+  },
+  update_frequency_type({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_FREQUENCY_TYPE', value)</span>
+  },
+  update_frequency({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_FREQUENCY', value)</span>
+  },
+  update_frequency_day({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_FREQUENCY_DAY', value)</span>
+  },
+  update_platform_id ({commit}, platform_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_PLATFORM_ID', platform_id)</span>
+  },
+  update_mediatype_id ({commit}, mediatype_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_MEDIATYPE_ID', mediatype_id)</span>
+  },
+  update_channel_id ({commit}, channel_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_CHANNEL_ID', channel_id)</span>
+  },
+  update_position_id ({commit}, position_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_POSITION_ID', position_id)</span>
+  },
+  update_adform_id ({commit}, adform_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_ADFORM_ID', adform_id)</span>
+  },
+  update_ad_pos_list ({commit}, ad_pos_list) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_AD_POS_LIST', ad_pos_list)</span>
+  },
+  update_ad_pos ({commit}, ad_pos) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_AD_POS', ad_pos)</span>
+  },
+  update_ad_pos_except ({commit}, ad_pos_except) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_AD_POS_EXCEPT', ad_pos_except)</span>
+  },
+  update_webview({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_WEBVIEW', value)</span>
+  },
+  update_device_type ({commit}, device_type) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_DEVICE_TYPE', device_type)</span>
+  },
+  update_os({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_OS', value)</span>
+  },
+  update_net_config({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_NET_CONFIG', value)</span>
+  },
+  update_network({commit}, value){
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_NETWORK', value);</span>
+  },
+  update_group_id ({commit}, gruop_id) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_ID', gruop_id)</span>
+  },
+  update_group_name ({commit}, group_name) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_NAME', group_name)</span>
+  },
+  update_is_save_group ({commit}, is_save_group) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_IS_SAVE_GROUP', is_save_group)</span>
+  },
+  update_group_type ({commit}, group_type) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_TYPE', group_type)</span>
+  },
+  update_group_validaty ({commit}, group_validaty) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_VALIDATY', group_validaty)</span>
+  },
+  update_group_info ({commit}, group_info) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_INFO', group_info)</span>
+  },
+  update_group_keys ({commit}, group_keys) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_KEYS', group_keys)</span>
+  },
+  update_group_cookie ({commit}, group_cookie) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_COOKIE', group_cookie)</span>
+  },
+  update_group_id_type ({commit}, group_id_type) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_ID_TYPE', group_id_type)</span>
+  },
+  update_group_device ({commit}, group_device) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_DEVICE', group_device)</span>
+  },
+  update_group_encrypt ({commit}, group_encrypt) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_GROUP_ENCRYPT', group_encrypt)</span>
+  },
+  update_zone_info ({commit}, zone_info) {
+<span class="cstat-no" title="statement not covered" >    commit('UPDATE_ZONE_INFO', zone_info)</span>
+  },
+  padding_group ({dispatch}, payload) {
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_id', payload.group_id || '');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_name', payload.group_name || '');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_is_save_group', payload.is_save_group || false);</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_type', payload.group_type || '1');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_validaty', payload.group_validaty || '30');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_info', payload.group_info || '');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_keys', payload.group_keys || []);</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_cookie', payload.group_cookie || '');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_id_type', payload.group_id_type || '1');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_device', payload.group_device || '');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_encrypt', payload.group_encrypt || '0');</span>
+  },
+  create_group({state, getters, dispatch}) {
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      return fetch.post('/group/create', getters.group_data ).then(function (res) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0) {</span>
+<span class="cstat-no" title="statement not covered" >          dispatch('update_group_id', res.data.id)</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res);</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch(function (err) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject(err);</span>
+      });
+    })
+  },
+  update_group({state, rootState, getters}) {
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      return fetch.post('/group/update', {</span>
+        // id: rootState.ad.campaign_id,
+        ...getters.group_data
+      }).then(function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0) {</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res);</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch(function (err) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject(err);</span>
+      });
+    })
+  },
+  // 创建广告计划 - 第一步
+  create_campaign_step1({state, rootState, dispatch}, payload){
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      fetch.post('/campaign/step', {</span>
+        id: rootState.ad.campaign_id,
+        advertiser_id: rootState.ad.ader_id,
+        brand_id: rootState.ad.brand_id,
+        product_line: rootState.ad.product_id,
+        project_id: rootState.ad.project_id,
+        activity_id: rootState.ad.activity_id,
+        name: rootState.ad.campaign_name,
+        budget: state.budget,
+        start_time: state.start_date,
+        end_time: state.end_date,
+      }).then( res =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0 ) {</span>
+<span class="cstat-no" title="statement not covered" >          if(res.data.id) {</span>
+<span class="cstat-no" title="statement not covered" >            dispatch('ad/update_campaign_id', res.data.id, {root: true})</span>
+          }
+<span class="cstat-no" title="statement not covered" >          resolve(res)</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch( err =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject( err )</span>
+      })
+    })
+  },
+  // 创建广告计划 - 第二步
+  create_campaign_step2({state, rootState, dispatch}, payload){
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      fetch.post('/campaign/step', {</span>
+        id: rootState.ad.campaign_id,
+&nbsp;
+        timeset_check: state.timeset_check ? 1: 0,
+        time_setting: state.timeset,
+&nbsp;
+        local_check: state.local_check ? 1: 0,
+        local: state.local.join(','),
+&nbsp;
+        speed_check: state.speed_check ? 1: 0,
+        speed: state.speed,
+&nbsp;
+        frequency_check: state.frequency_check ? 1: 0,
+        frequency_type: state.frequency_type,
+        frequency: state.frequency,
+        frequency_day: state.frequency_day,
+&nbsp;
+        media_check: state.media_check ? 1: 0,
+&nbsp;
+        platform_id: state.platform_id.join(','),
+        mediatype_id: state.mediatype_id.join(','),
+        channel_id: state.channel_id.join(','),
+        position_id: state.position_id.join(','),
+        adform_id: state.adform_id.join(','),
+        ad_pos: state.ad_pos.join(','),
+        ad_pos_except: state.ad_pos_except.join(','),
+&nbsp;
+        advance_check: state.advance_check ? 1: 0,
+        net_config: state.net_config.join(','),
+        network: state.network.join(','),
+        device_type: state.device_type.join(','),
+        os: state.os.join(','),
+        webview: state.webview.join(','),
+      }).then( res =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0 ) {</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res)</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch( err =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject( err )</span>
+      })
+    })
+  },
+  // 创建广告计划 - 第三步
+  create_campaign_step3({state, rootState, dispatch}, payload){
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      fetch.post('/campaign/step', {</span>
+        id: rootState.ad.campaign_id,
+        group: state.group_id,
+      }).then( res =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0 ) {</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res)</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch( err =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject( err )</span>
+      })
+    })
+  },
+  // 创建广告计划 - 第四步
+  create_campaign_step4({state, rootState, dispatch}, payload){
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      fetch.post('/campaign/step', {</span>
+        id: rootState.ad.campaign_id,
+        zone_info: state.zone_info.map( item =&gt; <span class="fstat-no" title="function not covered" >{ <span class="cstat-no" title="statement not covered" >return { data: item }}</span>)</span>
+      }).then( res =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0 ) {</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res)</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch( err =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject( err )</span>
+      })
+    })
+  },
+  // 推送计划到PBS
+  push_campaign({state, rootState, dispatch}, payload){
+<span class="cstat-no" title="statement not covered" >    payload = payload || {}</span>
+<span class="cstat-no" title="statement not covered" >    return new Promise( (resolve, reject) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      fetch.post('/campaign/push', {</span>
+        id: payload.id || rootState.ad.campaign_id
+      }).then( res =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if( res.ret == 0 ) {</span>
+<span class="cstat-no" title="statement not covered" >          resolve(res)</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error(res.msg))</span>
+        }
+      }).catch( err =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        reject( err )</span>
+      })
+    })
+  },
+  padding_campaign( {dispatch, state, rootState}, payload){
+<span class="cstat-no" title="statement not covered" >    payload = payload || {}</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('ad/update_campaign_id', payload.id || '', {root: true})</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('ad/update_campaign_name', payload.name || '', {root: true})</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_budget', payload.budget || '')</span>
+<span class="cstat-no" title="statement not covered" >    if( payload.start_time ) {</span>
+<span class="cstat-no" title="statement not covered" >      dispatch('update_start_date', payload.start_time)</span>
+<span class="cstat-no" title="statement not covered" >      dispatch('update_end_date', payload.end_time)</span>
+    }
+    // 时间设置默认为全时段
+<span class="cstat-no" title="statement not covered" >    dispatch('update_timeset_check', payload.timeset_check == '1' ? true : false)</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_timeset', payload.time_setting || "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111")</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_local_check', payload.local_check == '1' ? true : false)</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_local', payload.local &amp;&amp; payload.local.split(',') || [])</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_speed_check', payload.speed_check == '1' ? true : false)</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_speed', payload.speed || '1')</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_frequency_check', payload.frequency_check == '1' ? true : false)</span>
+    // 未选择 跨媒体曝光类型, 后台会返回0，这里把0转化为""
+    var frequency_type = <span class="cstat-no" title="statement not covered" >payload.frequency_type == '0' ? '' : payload.frequency_type</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_frequency_type', frequency_type || '')</span>
+&nbsp;
+    var frequency = <span class="cstat-no" title="statement not covered" >payload.frequency == '0' ? '' : payload.frequency</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_frequency', frequency || '')</span>
+&nbsp;
+    var frequency_day = <span class="cstat-no" title="statement not covered" >payload.frequency_day == '0' ? '' : payload.frequency_day</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_frequency_day', frequency_day || '')</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_media_check', payload.media_check == '1' ? true : false)</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_platform_id', payload.platform_id &amp;&amp; payload.platform_id.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_mediatype_id', payload.mediatype_id &amp;&amp; payload.mediatype_id.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_channel_id', payload.channel_id &amp;&amp; payload.channel_id.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_position_id', payload.position_id &amp;&amp; payload.position_id.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_adform_id', payload.adform_id &amp;&amp; payload.adform_id.split(',') || [])</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_ad_pos_list', [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_ad_pos', payload.ad_pos &amp;&amp; payload.ad_pos.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_ad_pos_except', payload.ad_pos_except &amp;&amp; payload.ad_pos_except.split(',') || [])</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_advance_check', payload.advance_check == '1' ? true : false)</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_net_config', payload.net_config &amp;&amp; payload.net_config.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_network', payload.network &amp;&amp; payload.network.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_device_type', payload.device_type &amp;&amp; payload.device_type.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_os', payload.os &amp;&amp; payload.os.split(',') || [])</span>
+<span class="cstat-no" title="statement not covered" >    dispatch('update_webview', payload.webview &amp;&amp; payload.webview.split(',') || [])</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch('update_group_id', payload.group || '')</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if( payload.zone_info &amp;&amp; payload.zone_info.length) {</span>
+      var zone_info = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >      if( typeof payload.zone_info == "string" ) {</span>
+<span class="cstat-no" title="statement not covered" >        zone_info = JSON.parse(payload.zone_info)</span>
+      }
+<span class="cstat-no" title="statement not covered" >      zone_info = zone_info.map( item =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >       return item.data</span>
+      })
+    }
+    else {
+      var zone_info = <span class="cstat-no" title="statement not covered" >[];</span>
+    }
+<span class="cstat-no" title="statement not covered" >    dispatch('update_zone_info', zone_info)</span>
+&nbsp;
+  }
+}
+&nbsp;
+export default actions
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 16:35:32 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+/* 主导航菜单 */
+.el-menu-nav {
+  border-right: 0;
+  background: #001529;
+  color: #fff;
+}
+.el-menu-nav .el-menu-item,
+.el-menu-nav .el-submenu .el-submenu__title,
+.el-menu-nav .el-submenu >.el-menu,
+.el-menu-nav .el-submenu .el-menu-item {
+  background-color: #001529;
+  text-align: center;
+  color: #999;
+  min-width: auto;
+}
+.el-menu-nav .el-menu-item a{
+  text-decoration: none;
+}
+.el-menu-nav .el-menu-item:hover,
+.el-menu-nav .el-submenu.is-active .el-submenu__title,
+.el-menu-nav .el-submenu .el-submenu__title:hover {
+  background-color: #5eacf5!important;
+  color: #fff!important;
+}
+
+.el-menu-nav .el-menu-item:focus{
+  background-color: #1890ff!important;
+  color: #fff!important;
+}
+
+.el-menu-nav .el-submenu.is-active .el-submenu__title i.el-submenu__icon-arrow,
+.el-menu-nav .el-submenu .el-submenu__title:hover i.el-submenu__icon-arrow  {
+  color: #fff;
+}
+.el-menu-nav .el-menu-item.is-active {
+  background-color: #1890ff;
+  color: #fff;
+}
+.el-menu-nav .el-menu-item i {
+  color: inherit;
+}
+
+/* 二级导航 */
+.sub-menu-nav {
+  background: #fff;
+  color: #333;
+}
+.sub-menu-nav .el-menu-item{
+  height: 30px;
+  line-height: 26px;
+  font-size: 12px;
+}
+
+/* alert */
+.el-alert--warning {
+  border: 1px solid #eb9e05;
+}
+
+/* 查看大图 */
+.el-message-preview-box {
+  width: auto;
+  background: rgba(0, 0, 0, 0);
+  border:none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  margin-top: 60px;
+  /* transform: scale(1); */
+  animation:preview-animation .5s ease-in-out;
+}
+
+.el-message-preview-box .el-icon-close{
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@keyframes preview-animation
+{
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+
+/* 修复 date-picker 在 size="mini" 输入框过长的问题 */
+.el-input--mini.el-date-editor {
+  width: 150px;
+}
+
+/* table */
+.el-table__body tr.active>td{
+  background-color: #ecf5ff;
+}
+
+/* dialog 垂直居中 */
+.el-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto !important;
+  transform: translate(-50%, -50%);
+}
+/*重写el_tag*/
+
+.el-tag {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.el-tree-node > .el-tree-node__children {
+  overflow: inherit;
+}
+.el-tree-node__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 26px;
+  cursor: pointer;
+  font-size: 12px;
+}
+/*重写el_tree 高亮效果*/
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content{
+  background: #1890ff;
+  color: #fff;
+}
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  background-color: #1890ff;
+}
+/*重写el_table 表头效果*/
+.el-table thead {
+  color: #333;
+  font-weight: 500;
+}
+.el-table thead tr, .el-table th {
+  background: #fafafa;
+}
+/*el-dialog__title 标题效果*/
+.el-dialog__title {
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.hy-card .hy-card__header .title {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.form-wrap h2 {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  font-size: 14px !important;
+  margin-top: -10px;
+  border-bottom: 1px solid #f0f2f5;
+}
+.el-form-item__label {
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  font-size: 12px;
+  color: #333;
+  line-height: 40px;
+  padding: 0 12px 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.el-dialog__body {
+  max-height: 500px;
+  overflow: auto;
+}
+.el-form--inline .el-form-item{
+  margin-bottom: 0;
+}
+.el-radio__label {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.el-tree-node__label {
+  font-size: 12px;
+}
+.el-checkbox__label {
+  padding-left: 5px;
+  font-size: 12px;
+}
+.el-step.is-simple .el-step__title {
+  font-size: 12px;
+  line-height: 20px;
+}
+.el-step__icon.is-text {
+  border: 1px solid;
+}
+.el-step__head.is-process {
+  color: #2d2f33;
+}
+.el-step__title.is-process {
+  color: #2d2f33;
+}
+.el-button + .el-button {
+  margin-left: 0px;
+}
+.el-date-editor .el-range-input {
+  width: 70px;
+
+}
+.el-date-editor--daterange.el-input, .el-date-editor--daterange.el-input__inner, .el-date-editor--timerange.el-input, .el-date-editor--timerange.el-input__inner {
+  width: 228px;
+}
+.el-button [class*=" el-icon-"],[class^=el-icon-] {
+  font-size: 13px;
+}
+.el-message {
+  min-width: 250px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  filter:Alpha(opacity=50);
+
+}
+.el-message--success,.el-message--error,.el-message--info {
+  background-color: rgba(0,0,0,.7);
+  border-color: transparent;
+  color: #fff;
+}
+.el-message .el-icon-success,.el-message .el-icon-error,.el-message .el-icon-info {
+  color: #fff;
+}
+.el-message--success .el-message__content ,.el-message--error .el-message__content,.el-message--info .el-message__content{
+  color: #fff;
+  font-size: 12px;
+}
+
+.el-input-group > .el-input__inner {
+  vertical-align:baseline;
+  display: inherit;
+}
+
+.el-loading-mask{
+  z-index: 2000!important;
+}
